@@ -25,5 +25,7 @@ public class SessionInfoController {
         log.info("sessionId={}", session.getId());
         log.info("sessionId={}", session.getMaxInactiveInterval());
         log.info("creationTime={}", new Date(session.getCreationTime()));
+
+        return "세션이 있습니다.";
     }
 }
